@@ -16,8 +16,9 @@ image2=cv2.imread(image_dir+'\\hands2.jpg')
 cv2.imshow('image1',image1)
 cv2.imshow('image2',image2)
 #convert to grayscale
-#im1=cv2.cvtColor(image1,cv2.COLOR_BGR2GRAY)
-#im2=cv2.cvtColor(image2,cv2.COLOR_BGR2GRAY)
+
+im1=cv2.cvtColor(image1,cv2.COLOR_BGR2GRAY)
+im2=cv2.cvtColor(image2,cv2.COLOR_BGR2GRAY)
 
 
 #blending

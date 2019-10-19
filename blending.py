@@ -1,12 +1,11 @@
-import cv2
-import os
+import cv2,os
 
 #set base directory
 BASE_DIR=os.path.dirname(os.path.abspath(__file__))
 image_dir=os.path.join(BASE_DIR, "images")
 
 #read image from directory
-image1=cv2.imread(image_dir+'\\hands1.jpg',cv2.IMREAD_GRAYSCALE)
+image1=cv2.imread(image_dir+'\\hands1.jpg',cv2.IMREAD_GRAYSCALE) # all the actions in image processing are performed on grayscale images
 image2=cv2.imread(image_dir+'\\hands2.jpg',cv2.IMREAD_GRAYSCALE)
 
 print('1:',image1)
